@@ -6,4 +6,9 @@ app=Flask(__name__)
 def index():
     return "Blog Home"
 
+from mod_admin import admin #import the admin objct
+
+app.register_blueprint(admin) #register Blueprints in app.py
+
+
 
