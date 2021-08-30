@@ -12,9 +12,9 @@ migrate = Migrate(app,db) #db parameter help migrate to connect and access to da
 
 
 
-@app.route('/')
-def index():
-    return "Blog Home"
+#@app.route('/')  Move this view to views.py file
+#def index():
+    #return "Blog Home"
 
 from mod_admin import admin #import the admin objct
 from mod_users import users
