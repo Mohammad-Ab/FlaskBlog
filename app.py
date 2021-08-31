@@ -16,6 +16,8 @@ migrate = Migrate(app,db) #db parameter help migrate to connect and access to da
 #def index():
     #return "Blog Home"
 
+from views import index
+
 from mod_admin import admin #import the admin objct
 from mod_users import users
 
