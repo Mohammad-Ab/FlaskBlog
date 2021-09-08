@@ -14,3 +14,5 @@ class User(db.Model):
         self.password = generate_password_hash(password)
     def check_password(self,password):
         return check_password_hash(self.password, password)
+    def is_admin(self):
+        return self.role == 1
